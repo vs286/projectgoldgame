@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Game Scripts</name>
+    <events>
+        <event-block sid="610846523551423">
+            <conditions>
+                <condition id="-14" name="Pick by unique ID" sid="739460742406917" type="Button">
+                    <param id="0" name="Unique ID">10</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="874979319260159">
+            <conditions>
+                <condition id="0" name="On clicked" sid="714307484825563" type="Button" />
+            </conditions>
+            <actions>
+                <action id="-43" name="Go to next/previous layout" sid="405596799854420" type="System">
+                    <param id="0" name="Which">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="679128721068341" type="Button" />
+            </actions>
+        </event-block>
+        <event-block sid="508048261416323">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="412714642066531" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="463009793112280" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="188673856493853">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="402300471533171" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="961587865652735" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="946504427315234">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="924218426537065" type="Player">
+                    <param id="0" name="Object">Finish</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-43" name="Go to next/previous layout" sid="528964942145632" type="System">
+                    <param id="0" name="Which">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="905588347414241">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="871742029665343" type="Player" />
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="468860872388156" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="123683141526052">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="367246837324444" type="Player">
+                    <param id="0" name="Object">Spike</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="884989596052625" type="Player" />
+                <action id="-26" name="Restart layout" sid="284220816788691" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="854864897303462">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="736358696213158" type="Player">
+                    <param id="0" name="Object">Back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="960137241341894" type="System">
+                    <param id="0" name="Layout">GUI Screen</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="189585924739616">
+            <conditions>
+                <condition id="-16" name="Is on layer" sid="891152099094405" type="Player">
+                    <param id="0" name="Layer">&quot;Background_dj&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="13" name="Set double-jump" sid="828016233354513" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="394105860126278">
+            <conditions>
+                <condition id="-16" name="Is on layer" sid="287011599629064" type="Player">
+                    <param id="0" name="Layer">&quot;Background&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="13" name="Set double-jump" sid="117464438677178" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="308005401031819">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="501100176386305" type="Player">
+                    <param id="0" name="Object">djenabler</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Move to layer" sid="781853384066985" type="Player">
+                    <param id="0" name="Layer">&quot;Background_dj&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="607044046832976">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="947676846189426" type="Player">
+                    <param id="0" name="Object">DeveloperPortal</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="669443724693447" type="System">
+                    <param id="0" name="Layout">sandbox</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="322671984117437">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="801523205104166" type="Player">
+                    <param id="0" name="Object">MovingSpike</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="610517316970059" type="Player" />
+                <action id="-26" name="Restart layout" sid="831684253285402" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
